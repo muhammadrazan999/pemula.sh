@@ -9,6 +9,11 @@ merah='\033[31;1m'
 kuning='\033[33;1m'
 kuning_terang='\033[33;1m'
 
+ulang="y"
+
+while [  $ulang = "y"  ] ;
+do
+
 
 echo -e "${hijau}----------------------------------------
 |                                      |
@@ -44,6 +49,10 @@ case $pilih in
     pkg install php
     pkg install lib
     pkg install python2
+     sleep 2
+    echo -e $hijau " penginstalan selesai "
+    sleep 2
+     echo $ulang
 ;;
 2)        
     echo -e $biru " Yo wassup gengs oke ini dia pengertiannya "
@@ -57,8 +66,19 @@ case $pilih in
     echo -e $merah " https://youtu.be/tnlYIWNobwk ( tutorial deface web berita ) "
     echo -e $hijau " https://youtu.be/npMUKgK9we0 ( tutorial install metasploit di TERMUX  ) "
     echo -e $hijau " oke terima kasih sudah mau menggunakan tools ini "
+     sleep 2
+    echo -e $hijau " penginstalan selesai "
+    sleep 2
+     echo $ulang
 ;;
+3 )
+    echo -e $merah " ya udah dadah... terima kasih ya"
+     sleep 3
+;;   exit
 *)      
-    echo -e $merah " input yang anda masukan tidak tersedia "
-    echo -e $merah " coba lagi yah :) "
+    sleep 2
+    echo -e $hijau " yah kamu mah salahan terus ngetik yang bener cuy "
+     sleep 3
+     echo $ulang
 esac
+done

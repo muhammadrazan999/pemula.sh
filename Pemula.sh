@@ -74,7 +74,8 @@ case $pilih in
 3 )
     echo -e $merah " ya udah dadah... terima kasih ya"
      sleep 3
-;;   exit
+    exit
+;;
 *)      
     sleep 2
     echo -e $hijau " yah kamu mah salahan terus ngetik yang bener cuy "

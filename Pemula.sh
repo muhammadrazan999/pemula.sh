@@ -72,7 +72,10 @@ case $pilih in
     sleep 2
      echo $ulang
 ;;
-3 )
+3)
+    echo -e $hijau "kalian pilih saja "
+    echo -e $biru " di waktu selama 20 detik"
+    echo -e $merah " secara otomatis akan kembali ke home atau beranda"
     echo -e $merah " http://bitsandpieces.co.za
 http://windmillsandporcupines.co.za
 http://scnc.co.za
@@ -363,6 +366,10 @@ http://tieronecapital.co.za
 http://thegiftstore.co.za
 http://thefoundation.co.za
 http://liessor.co.za"
+    sleep 30
+   echo $ulang
+
+;;
 4) echo " makasih udah pakai tools ini "
      exit 
 ;;
